@@ -50,7 +50,5 @@ google-genai
 git+https://github.com/jonesroot/callgram.git@master
 git+https://github.com/google-gemini/generative-ai-python.git@main
 git+https://github.com/FerlyKurniawan/hydrogram@dev
-git+https://github.com/FerlyKurniawan/pyrogram@master
-git+https://github.com/FerlyKurniawan/pyrogram-fork@dev
 pyrogram-navy
 git+https://github.com/yt-dlp/yt-dlp@master
