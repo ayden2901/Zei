@@ -2,8 +2,9 @@ import asyncio
 import os
 import random
 
-from pyrogram.enums import ChatType
-from pyrogram.errors import (ChannelPrivate, ChatSendPlainForbidden,
+from pyrogram.enums import ChatType 
+from Navy.helpers.exceptions import ChatSendPlainForbidden
+from pyrogram.errors import (ChannelPrivate,
                              ChatWriteForbidden, FloodWait, Forbidden,
                              PeerIdInvalid, SlowmodeWait, UserBannedInChannel)
 
