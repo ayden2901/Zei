@@ -133,7 +133,12 @@ class UnsupportedMethod(Exception):
             'Unsupported method for this kind of call',
         )
 class ChatSendPhotosForbidden(Exception):
-    def init(self):
-        super().init(
+    def __init__(self):
+        super().__init__(
             'The chat does not allow sending photos',
+        )
+class ChatSendPlainForbidden(Exception):
+    def __init__(self):
+        super().__init__(
+            'The chat does not allow sending plain text messages',
         )
