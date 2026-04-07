@@ -13,8 +13,13 @@ __HELP__ = """<u>📋 ᴄᴏᴍᴍᴀɴᴅ ʜᴇʟᴘ <b>sᴛᴏʀʏ</b></u>
 
 import traceback
 
-from pyrogram.enums import StoriesPrivacyRules
-
+try:
+    from pyrogram.enums import StoriesPrivacyRules
+except ImportError:
+    class StoriesPrivacyRules:
+        PUBLIC = "public"
+        CONTACTS = "contacts"
+        CLOSE_FRIENDS = "close_friends"
 from Navy.helpers import CMD, Emoji, Tools
 from Navy.logger import logger
 
