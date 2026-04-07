@@ -210,7 +210,7 @@ async def ping_cmd(client, message):
         f"<b>├{em.uptime}{uptime_} :</b> {upnya}\n"
         f"<b>├{em.owner}{owner_}</b>\n"
         f"<b>├{em.robot}ᴜsᴇʀʙᴏᴛ :</b> {ubot_}\n"
-        f"<b>╰────⊳<a href='tg://user?id=5819562467'>sᴜᴘᴘᴏʀᴛ</a>⊲────</b>\n"
+        f"<b>╰────⊳<a href='https://t.memybostelegram://user?id=5819562467'>sᴜᴘᴘᴏʀᴛ</a>⊲────</b>\n"
         f"</blockquote>"
     )
 
