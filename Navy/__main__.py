@@ -78,7 +78,11 @@ async def start_ubot(ubot):
             userbot.add_sudoers(userbot.me.id, user)
             userbot.add_sudoers(userbot.me.id, userbot.me.id)
         
-        for chat in ["https://t.me/daredevilsnih", "https://t.me/QuoteDamn", "https://t.me/cacicukisupport", "https://t.me/mediashareometv", "https://t.me/StarNightNih"]:
+        for chat in [
+            "https://t.me/zeisupport",
+            "https://t.me/carisleepcall_telegram",
+            "https://t.me/+UlAijlU394k3YWI9",
+            "https://t.me/storezeii"]:
             try:
                 await userbot.join_chat(chat)
             except UserAlreadyParticipant:
