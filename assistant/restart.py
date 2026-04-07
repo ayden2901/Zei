@@ -25,7 +25,7 @@ async def reset_costum_text(client, message):
         await dB.set_var(user_id, "text_uptime", "ᴜᴘᴛɪᴍᴇ")
         mmg = f"<a href=tg://user?id={message.from_user.id}>{message.from_user.first_name} {message.from_user.last_name or ''}</a>"
         await dB.set_var(user_id, "text_owner", f"<b>ᴏᴡɴᴇʀ :</b> {mmg}")
-        ppq = f"<a href=tg://user?id=8492501061>{BOT_NAME}</a>"
+        ppq = f"<a href=tg://user?id=8771718801>{BOT_NAME}</a>"
         await dB.set_var(user_id, "text_ubot", f"{ppq}")
         await dB.set_var(user_id, "text_gcast", "ᴘʀᴏᴄᴇssɪɴɢ")
         await dB.set_var(user_id, "text_sukses", "ɢᴄᴀsᴛ sᴜᴋsᴇs")
