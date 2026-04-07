@@ -386,7 +386,7 @@ async def _(client, message):
 
     _ping = (
         f"<blockquote expandable>"
-        f"<b>╭───⊳sᴛᴀʀxᴄᴏᴅᴇ⊲────</b>\n"
+        f"<b>╭───⊳zei ubot⊲────</b>\n"
         f"<b>├{em.ping}{pong_} :</b> {duration}ms\n"
         f"<b>├{em.uptime}{uptime_} :</b> {upnya}\n"
         f"<b>├{em.owner}{owner_}</b>\n"
