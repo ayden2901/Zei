@@ -132,3 +132,8 @@ class UnsupportedMethod(Exception):
         super().__init__(
             'Unsupported method for this kind of call',
         )
+class ChatSendPhotosForbidden(Exception):
+    def init(self):
+        super().init(
+            'The chat does not allow sending photos',
+        )
