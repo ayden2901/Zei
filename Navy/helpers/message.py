@@ -72,7 +72,7 @@ class Message:
 <blockquote><b>❏ sʏᴀʀᴀᴛ ᴅᴀɴ ᴋᴇᴛᴇɴᴛᴜᴀɴ ᴍᴇᴍᴀᴋᴀɪ ᴜsᴇʀʙᴏᴛ : [Klik disini](https://telegra.ph/RESIKO-USERBOT-04-07)</b></blockquote>
 <blockquote><b>❏ ᴊɪᴋᴀ ᴛᴇʀᴊᴀᴅɪ ᴇʀʀᴏʀ/ᴍᴀᴛɪ ʜᴜʙᴜɴɢɪ : [zei](https://t.me/mybostelegram)</b></blockquote>
 
-<blockquote><b>©️ ᴄʀᴇᴀᴛᴇᴅ ʙʏ ➟ [zei](https://t.me/mybostelegram</b></blockquote>
+<blockquote><b>©️ ᴄʀᴇᴀᴛᴇᴅ ʙʏ ➟ [zei](https://t.me/mybostelegram)</b></blockquote>
 """
 
     @staticmethod
