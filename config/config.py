@@ -1,4 +1,4 @@
-import json
+ import json
 import os
 import sys
 from base64 import b64decode
@@ -102,7 +102,7 @@ SPOTIFY_CLIENT_ID = os.environ.get(
 SPOTIFY_CLIENT_SECRET = os.environ.get(
     "SPOTIFY_CLIENT_SECRET", "fb110a1fddae4c659c7db16cc9f15abc"
 )
-SAWERIA_EMAIL = defended9@gmail.com
+SAWERIA_EMAIL = os.environ.get("SAWERIA_EMAIL", "defended9@gmail.com")
 SAWERIA_NAME = os.environ.get("SAWERIA_NAME", "ayden29")
 API_KEY = [
     "4dd6efe4b3msh7af04b95cfc378ep10a5e4jsnfa10ed324a43",
