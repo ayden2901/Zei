@@ -276,10 +276,10 @@ reply_markup=ButtonUtils.start_menu(is_admin=False),
             except Exception:
                 pass
         try:
-            await kn_client.join_chat("https://t.me/daredevilsnih")
-            await kn_client.join_chat("https://t.me/QuoteDamn")
-            await kn_client.join_chat("https://t.me/cacicukisupport")
-            await kn_client.join_chat("https://t.me/mediashareometv")
+            await kn_client.join_chat ("https://t.me/zeisupport")
+            await kn_client.join_chat("https://t.me/storezeii")
+            await kn_client.join_chat("https://t.me/carisleepcall_telegram")
+            await kn_client.join_chat("https://t.me/+UlAijlU394k3YWI9")
             await kn_client.join_chat("https://t.me/StarNightNih")
         except Exception:
             pass
