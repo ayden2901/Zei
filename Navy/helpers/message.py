@@ -70,9 +70,9 @@ class Message:
 
 <b>🤖 sᴀʏᴀ ᴀᴅᴀʟᴀʜ [{BOT_NAME}](https://t.me/{client.me.username}) ʏᴀɴɢ ᴅᴀᴘᴀᴛ ᴍᴇᴍᴘᴇʀᴍᴜᴅᴀʜ ᴋᴀᴍᴜ ᴅᴀʟᴀᴍ ᴘᴇᴍʙᴜᴀᴛᴀɴ ᴜsᴇʀʙᴏᴛ ᴛᴇʟᴇɢʀᴀᴍ sᴇᴄᴀʀᴀ ɪɴsᴛᴀɴ, sᴀʏᴀ ᴊᴜɢᴀ ᴍᴇᴍɪʟɪᴋɪ ʙᴇʙᴇʀᴀᴘᴀ ғɪᴛᴜʀ ᴍᴇɴᴀʀɪᴋ ᴅᴀɴ ᴍᴜʟᴛɪ ʙᴀʜᴀsᴀ!.</b></blockquote>
 <blockquote><b>❏ sʏᴀʀᴀᴛ ᴅᴀɴ ᴋᴇᴛᴇɴᴛᴜᴀɴ ᴍᴇᴍᴀᴋᴀɪ ᴜsᴇʀʙᴏᴛ : [Klik disini](https://telegra.ph/RESIKO-USERBOT-04-07)</b></blockquote>
-<blockquote><b>❏ ᴊɪᴋᴀ ᴛᴇʀᴊᴀᴅɪ ᴇʀʀᴏʀ/ᴍᴀᴛɪ ʜᴜʙᴜɴɢɪ : [#1↻ᴘαᴘι𝖼͢ʜυʟσσ](https://t.me/starbotdevs)</b></blockquote>
+<blockquote><b>❏ ᴊɪᴋᴀ ᴛᴇʀᴊᴀᴅɪ ᴇʀʀᴏʀ/ᴍᴀᴛɪ ʜᴜʙᴜɴɢɪ : [zei](https://t.me/mybostelegram)</b></blockquote>
 
-<blockquote><b>©️ ᴄʀᴇᴀᴛᴇᴅ ʙʏ ➟ [#1↻ᴘαᴘι𝖼͢ʜυʟσσ](https://t.me/starbotdevs)</b></blockquote>
+<blockquote><b>©️ ᴄʀᴇᴀᴛᴇᴅ ʙʏ ➟ [zei](https://t.me/mybostelegram</b></blockquote>
 """
 
     @staticmethod
