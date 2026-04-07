@@ -1,7 +1,7 @@
 from pyrogram import Client, types
 from pyrogram.types import Message
 from pyrogram.enums import ParseMode, ChatType
-from pyrogram.errors import ChatSendPhotosForbidden
+from Navy.helpers.exceptions import ChatSendPhotosForbidden
 
 from PIL import Image, ImageDraw, ImageFont
 from io import BytesIO
