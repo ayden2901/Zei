@@ -160,7 +160,7 @@ async def _(client, callback_query):
     text_help = (
         await dB.get_var(user_id, "text_help") or f"{bot.me.mention}"
     )
-    text_help2 = f"<blockquote><b>{bot.me.mention}\n©️ ᴄʀᴇᴀᴛᴇᴅ ʙʏ ➟</b> <a href=tg://user?id=347422710>#1↻￴`sтαя⋆</a></blockquote>"
+    text_help2 = f"<blockquote><b>{bot.me.mention}\n©️ ᴄʀᴇᴀᴛᴇᴅ ʙʏ ➟</b> <a href=tg://user?id=5819562467>zei⋆</a></blockquote>"
     costum_cq = (
         callback_query.edit_message_caption
         if cekpic
