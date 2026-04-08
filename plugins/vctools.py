@@ -216,7 +216,7 @@ async def _(client, message):
             f"{emo.profil}Group: <code>{title}</code>\n\n"
             f"<code>{str(e)}</code></b>"
         )
-        return await pros.delete(8)
+        #return await pros.delete(8)
 
 @CMD.UBOT("joinvc|jvc")
 @CMD.DEV_CMD("joinvc|jvc")
