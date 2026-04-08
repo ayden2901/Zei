@@ -1,7 +1,12 @@
 import asyncio
 import random
 
-from pyrogram.errors import ChatIdInvalid
+from pyrogram.errors import (
+    ChatIdInvalid,
+    UserAlreadyParticipant,
+    InviteHashInvalid,
+    InviteHashExpired
+)
 from pyrogram.raw import functions
 from pyrogram.raw.functions.phone import DiscardGroupCall
 from pyrogram.raw.types import InputGroupCall
@@ -9,7 +14,6 @@ from pytgcalls.exceptions import (NoActiveGroupCall, NotInCallError)
 from Navy.helpers.exceptions import AlreadyJoinedError
 from pyrogram.enums import ParseMode, ChatType
 from Navy.helpers import CMD, ButtonUtils, Emoji, Tools, task, animate_proses
-
 
 __MODULES__ = "ᴠᴄᴛᴏᴏʟs"
 __HELP__ = """<blockquote>Command Help **VcTools**</blockquote>
@@ -220,39 +224,17 @@ async def _(client, message):
 async def _(client, message):
     emo = Emoji(client)
     await emo.get()
-
-    args = message.chat.id if len(message.command) < 2 else message.text.split(maxsplit=1)[1]
-    pros = await animate_proses(message, emo.proses)
+    args = message.chat.id if len(message.command) < 2 else message.text.split()[1]
+    pros = await animate_proses(message, emo.proses) 
 
     if not pros:
         return
-
-    if isinstance(args, str) and "t.me/+" in args:
-        try:
-            await client.join_chat(args)
-            return await pros.edit(
-                f"{emo.sukses}<b>Berhasil join grup, ulangi perintah .jvc</b>"
-            )
-        except UserAlreadyParticipant:
-            pass
-        except (InviteHashInvalid, InviteHashExpired):
-            return await pros.edit(
-                f"{emo.gagal}<b>Link invite tidak valid / expired</b>"
-            )
-
-    if isinstance(args, str) and "t.me/" in args:
-        args = args.split("t.me/")[1]
 
     try:
         chat = await client.get_chat(args)
     except ChatIdInvalid:
         return await pros.edit(
-            f"{emo.gagal}<b>Link / Username / ID tidak valid</b>"
-        )
-
-    if not chat or not chat.id:
-        return await pros.edit(
-            f"{emo.gagal}<b>Chat tidak ditemukan</b>"
+            f"{emo.gagal}<b>yang bener aja\nLink nya salah itu</b>"
         )
 
     title = chat.title
@@ -261,40 +243,37 @@ async def _(client, message):
     group_call = await client.get_call(client, chat_id)
     if not group_call:
         await pros.edit(
-            f"{emo.gagal}<b>Voice Chat di <code>{title}</code> belum aktif</b>"
+            f"{emo.gagal}<b>Coba liat OS di <code>{title}</code> nyala ga.</b>"
         )
         return await pros.delete(8)
 
     try:
-        await client.group_call.play(chat_id)
+        await client.group_call.play(chat.id)
         await asyncio.sleep(1)
-        await client.group_call.unmute_stream(chat_id)
+        await client.group_call.unmute_stream(chat.id)
 
         await pros.edit(
-            f"{emo.sukses}<b>Berhasil join Voice Chat:\n{emo.profil}Group <code>{title}</code></b>"
+            f"{emo.sukses}<b>Anjay norak naikin Akun di :\n{emo.profil}Group <code>{title}</code>.</b>"
         )
         return await pros.delete(8)
 
     except NoActiveGroupCall:
         await pros.edit(
-            f"{emo.gagal}<b>Aktifkan dulu Voice Chat di <code>{title}</code></b>"
+            f"{emo.gagal}<b>Aktifin dulu OS <code>{title}</code>-nya tolol</b>"
         )
         return await pros.delete(8)
 
-    except AlreadyJoinedError:
+    except UserAlreadyParticipant:
         await pros.edit(
-            f"{emo.gagal}<b>Akun sudah berada di Voice Chat</b>"
+            f"{emo.gagal}<b>Akun lu udah di OS pea.</b>"
         )
         return await pros.delete(8)
 
     except Exception as e:
         await pros.edit(
-            f"{emo.gagal}<b>Gagal join VC di:\n"
-            f"{emo.profil}Group <code>{title}</code>\n"
-            f"Error:\n<code>{e}</code></b>"
+            f"{emo.gagal}<b>Akun lu gabisa naik di :\n{emo.profil}Group <code>{title}</code>\nError:\n<code>{e}</code></b>"
         )
         return await pros.delete(8)
-
 
 @CMD.UBOT("leavevc|lvc")
 @CMD.DEV_CMD("leavevc|lvc")
