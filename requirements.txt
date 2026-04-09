@@ -44,7 +44,7 @@ cloudscraper25
 yt-dlp
 uvicorn
 TgCrypto
-pyromod
+pyromod==1.5
 telethon
 google-genai
 git+https://github.com/jonesroot/callgram.git@master
