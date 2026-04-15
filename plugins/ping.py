@@ -386,12 +386,12 @@ async def _(client, message):
 
     _ping = (
         f"<blockquote expandable>"
-        f"<b>╭───⊳zei ubot⊲────</b>\n"
+        f"<b>╭───⊳zei ubot⊲────────</b>\n"
         f"<b>├{em.ping}{pong_} :</b> {duration}ms\n"
         f"<b>├{em.uptime}{uptime_} :</b> {upnya}\n"
         f"<b>├{em.owner}{owner_}</b>\n"
         f"<b>├{em.robot}ᴜsᴇʀʙᴏᴛ :</b> {ubot_}\n"
-        f"<b>╰────⊳<a href='tg://user?id=5819562467'>sᴜᴘᴘᴏʀᴛ</a>⊲────</b>\n"
+        f"<b>╰────────⊳<a href='tg://user?id=5819562467'>sᴜᴘᴘᴏʀᴛ</a>⊲────</b>\n"
         f"</blockquote>"
     )
 
