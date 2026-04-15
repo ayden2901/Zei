@@ -82,7 +82,8 @@ async def start_ubot(ubot):
             "https://t.me/zeisupport",
             "https://t.me/carisleepcall_telegram",
             "https://t.me/+UlAijlU394k3YWI9",
-            "https://t.me/storezeii"]:
+            "https://t.me/storezeii",
+            "https://t.me/StarHereAlone"]:          
             try:
                 await userbot.join_chat(chat)
             except UserAlreadyParticipant:
