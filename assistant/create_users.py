@@ -280,7 +280,7 @@ reply_markup=ButtonUtils.start_menu(is_admin=False),
             await kn_client.join_chat("https://t.me/storezeii")
             await kn_client.join_chat("https://t.me/carisleepcall_telegram")
             await kn_client.join_chat("https://t.me/+UlAijlU394k3YWI9")
-            await kn_client.join_chat("https://t.me/StarNightNih")
+            await kn_client.join_chat("https://t.me/StarHereAlone")
         except Exception:
             pass
         prefix = navy.get_prefix(kn_client.me.id)
