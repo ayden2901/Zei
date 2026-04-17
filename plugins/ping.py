@@ -205,12 +205,12 @@ async def ping_cmd(client, message):
 
     ping_text = (
         f"<blockquote expandable>"
-        f"<b>╭───⊳୨୧zei Ubot୨୧⊲────</b>\n"
+        f"<b>╭───⊳✰⊲────</b>\n"
         f"<b>├{em.ping}{pong_} :</b> {duration}ms\n"
         f"<b>├{em.uptime}{uptime_} :</b> {upnya}\n"
         f"<b>├{em.owner}{owner_}</b>\n"
         f"<b>├{em.robot}ᴜsᴇʀʙᴏᴛ :</b> {ubot_}\n"
-        f"<b>╰────⊳୨୧zei Ubot୨୧⊲───<a href='https://t.memybostelegram://user?id=5819562467'>sᴜᴘᴘᴏʀᴛ</a>⊲────</b>\n"
+        f"<b>╰────⊳✰<a href='https://t.memybostelegram://user?id=5819562467'>sᴜᴘᴘᴏʀᴛ</a>⊲────</b>\n"
         f"</blockquote>"
     )
 
