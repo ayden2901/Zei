@@ -80,7 +80,7 @@ async def start_ubot(ubot):
         
         for chat in [
             "https://t.me/zeisupport",
-            "https://t.me/carisleepcall_telegram",
+            "https://t.me/carisahabat_ngobrol",
             "https://t.me/+UlAijlU394k3YWI9",
             "https://t.me/storezeii",
             "https://t.me/StarHereAlone"]:          
